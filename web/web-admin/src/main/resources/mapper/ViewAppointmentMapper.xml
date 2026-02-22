@@ -4,9 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.lease.web.admin.mapper.ViewAppointmentMapper">
 
-    <resultMap id="AppointmentVoMap" type="com.atguigu.lease.web.admin.vo.appointment.AppointmentVo" autoMapping="true">
+    <resultMap id="AppointmentVoMap" type="com.ls.lease.web.admin.vo.appointment.AppointmentVo" autoMapping="true">
         <id property="id" column="id"/>
-        <association property="apartmentInfo" javaType="com.atguigu.lease.model.entity.ApartmentInfo" autoMapping="true">
+        <association property="apartmentInfo" javaType="com.ls.lease.model.entity.ApartmentInfo" autoMapping="true">
             <id property="id" column="apartment_id"/>
             <result property="name" column="apartment_name"/>
         </association>

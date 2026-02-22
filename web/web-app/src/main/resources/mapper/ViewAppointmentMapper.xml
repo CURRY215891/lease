@@ -4,9 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.lease.web.app.mapper.ViewAppointmentMapper">
 
-    <resultMap id="AppointmentItemVoMap" type="com.atguigu.lease.web.app.vo.appointment.AppointmentItemVo" autoMapping="true">
+    <resultMap id="AppointmentItemVoMap" type="com.ls.lease.web.app.vo.appointment.AppointmentItemVo" autoMapping="true">
         <id column="id" property="id"/>
-        <collection property="graphVoList" ofType="com.atguigu.lease.web.app.vo.graph.GraphVo" autoMapping="true"/>
+        <collection property="graphVoList" ofType="com.ls.lease.web.app.vo.graph.GraphVo" autoMapping="true"/>
     </resultMap>
     
     <select id="listItemByUserId" resultMap="AppointmentItemVoMap">

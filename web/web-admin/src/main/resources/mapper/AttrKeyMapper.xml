@@ -5,10 +5,10 @@
 <mapper namespace="com.atguigu.lease.web.admin.mapper.AttrKeyMapper">
 
 
-    <resultMap id="AttrKeyVoMap" type="com.atguigu.lease.web.admin.vo.attr.AttrKeyVo">
+    <resultMap id="AttrKeyVoMap" type="com.ls.lease.web.admin.vo.attr.AttrKeyVo">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
-        <collection property="attrValueList" ofType="com.atguigu.lease.model.entity.AttrValue">
+        <collection property="attrValueList" ofType="com.ls.lease.model.entity.AttrValue">
             <id property="id" column="attr_value_id"/>
             <result property="name" column="attr_value_name"/>
             <result property="attrKeyId" column="attr_key_id"/>

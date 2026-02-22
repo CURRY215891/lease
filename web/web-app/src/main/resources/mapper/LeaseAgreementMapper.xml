@@ -5,9 +5,9 @@
 <mapper namespace="com.atguigu.lease.web.app.mapper.LeaseAgreementMapper">
 
 
-    <resultMap id="AgreementItemVoMap" type="com.atguigu.lease.web.app.vo.agreement.AgreementItemVo" autoMapping="true">
+    <resultMap id="AgreementItemVoMap" type="com.ls.lease.web.app.vo.agreement.AgreementItemVo" autoMapping="true">
         <id property="id" column="id"/>
-        <collection property="roomGraphVoList" ofType="com.atguigu.lease.web.app.vo.graph.GraphVo" autoMapping="true"/>
+        <collection property="roomGraphVoList" ofType="com.ls.lease.web.app.vo.graph.GraphVo" autoMapping="true"/>
 
     </resultMap>
 
